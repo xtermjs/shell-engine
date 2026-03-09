@@ -7,7 +7,7 @@
     "build": "tsgo -b ./tsconfig.json",
     "watch-tsgo": "tsgo -b -w ./tsconfig.json",
     "watch-webpack": "webpack -c ./examples/xterm.js/webpack.config.js -w",
-    "test": "vitest run --globals --dir src/test"
+    "test": "vitest run --globals --dir test"
   },
   "repository": {
     "type": "git",

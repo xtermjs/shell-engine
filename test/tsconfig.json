@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
     "types": [
-      "../../node_modules/vitest/globals",
-      "../../node_modules/@types/node",
-      "../../node_modules/xterm-headless"
+      "../node_modules/vitest/globals",
+      "../node_modules/@types/node",
+      "../node_modules/xterm-headless"
     ],
     "lib": [
       "es5",
@@ -18,7 +18,7 @@
         "./*"
       ]
     },
-    "outDir": "../../out/test",
+    "outDir": "../out/test",
 
     "composite": true,
     "downlevelIteration": true,
@@ -36,6 +36,6 @@
     "./**/*"
   ],
   "references": [
-    { "path": "../tsconfig.json" }
+    { "path": "../src/tsconfig.json" }
   ]
 }

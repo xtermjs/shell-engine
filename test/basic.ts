@@ -1,4 +1,4 @@
-import { Shell } from '../shell.js';
+import { Shell } from '../src/shell.js';
 
 const shell = new Shell();
 shell.onDidWriteData(e => console.log('onDidWriteData: ' + e));

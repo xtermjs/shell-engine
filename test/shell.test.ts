@@ -1,6 +1,6 @@
 import { strictEqual } from 'assert';
 import { Terminal } from 'xterm-headless';
-import { Shell } from '../shell.js';
+import { Shell } from '../src/shell.js';
 
 describe('Shell', () => {
   let term: Terminal;
