@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "types": [
-      "../../node_modules/@types/mocha",
+      "../../node_modules/vitest/globals",
       "../../node_modules/@types/node",
       "../../node_modules/xterm-headless"
     ],
@@ -9,7 +9,9 @@
     "lib": [
       "es5",
       "ES2015",
-      "ES2017"
+      "ES2017",
+      "ES2020",
+      "DOM"
     ],
     "rootDir": ".",
     "baseUrl": ".",
@@ -23,6 +25,7 @@
     "pretty": true,
     "incremental": true,
     "noImplicitOverride": true,
+    "skipLibCheck": true,
     "strict": true
   },
   "include": [
