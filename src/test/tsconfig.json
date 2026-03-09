@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "types": [
+      "../../node_modules/@types/mocha",
+      "../../node_modules/@types/node",
+      "../../node_modules/xterm-headless"
+    ],
+    "target": "es5",
+    "lib": [
+      "es5",
+      "ES2015",
+      "ES2017"
+    ],
+    "rootDir": ".",
+    "baseUrl": ".",
+    "outDir": "../../out/test",
+
+    "composite": true,
+    "downlevelIteration": true,
+    "declaration": true,
+    "sourceMap": true,
+    "removeComments": true,
+    "pretty": true,
+    "incremental": true,
+    "noImplicitOverride": true,
+    "strict": true
+  },
+  "include": [
+    "./**/*"
+  ],
+  "references": [
+    { "path": "../tsconfig.json" }
+  ]
+}

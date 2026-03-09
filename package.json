@@ -1,0 +1,36 @@
+{
+  "name": "web-shell-engine",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch-tsc": "tsc -b -w ./tsconfig.json",
+    "watch-webpack": "webpack -c ./examples/xterm.js/webpack.config.js -w",
+    "test": "mocha ./out/test/**/*.test.js --diff false --enable-source-maps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tyriar/web-shell-engine.git"
+  },
+  "author": "Daniel Imms",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tyriar/web-shell-engine/issues"
+  },
+  "homepage": "https://github.com/Tyriar/web-shell-engine#readme",
+  "devDependencies": {
+    "@types/minimist": "^1.2.2",
+    "@types/mocha": "^9.1.1",
+    "babel-loader": "^8.2.2",
+    "mocha": "^10.0.0",
+    "source-map-loader": "^3.0.0",
+    "ts-loader": "^9.2.5",
+    "typescript": "^4.4.2",
+    "webpack": "^5.52.1",
+    "webpack-cli": "^4.8.0",
+    "xterm-headless": "^4.18.0"
+  },
+  "dependencies": {
+    "minimist": "^1.2.6"
+  }
+}
