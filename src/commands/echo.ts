@@ -1,5 +1,5 @@
+import minimist from 'minimist';
 import { Shell } from "../types.js";
-import * as minimist from 'minimist';
 
 export function registerEchoCommand(shell: Shell) {
   shell.commands.registerCommand('echo', {

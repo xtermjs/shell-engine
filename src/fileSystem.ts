@@ -1,6 +1,6 @@
 import { isAbsolute, join, resolve } from "./path.js";
 import { IDisposable, IFileSystemProvider, Shell } from "./types.js";
-import * as minimist from 'minimist';
+import minimist from 'minimist';
 import { createCdCommand } from "./builtins/cd.js";
 import { FileType } from './constants.js';
 

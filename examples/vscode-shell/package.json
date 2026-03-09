@@ -13,12 +13,11 @@
 		"*"
 	],
 	"main": "./out/extension.js",
-	"contributes": {
-	},
+	"contributes": {},
 	"scripts": {
 		"vscode:prepublish": "yarn run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
+		"compile": "tsgo -p ./",
+		"watch": "tsgo -watch -p ./",
 		"pretest": "yarn run compile",
 		"test": "node ./out/test/runTest.js"
 	},
@@ -27,10 +26,11 @@
 		"@types/mocha": "^5.2.7",
 		"@types/node": "^12.11.7",
 		"@types/vscode": "^1.39.0",
+		"@typescript/native-preview": "^7.0.0-dev.20260309.1",
 		"glob": "^7.1.5",
 		"mocha": "^6.2.2",
-		"typescript": "^3.6.4",
 		"tslint": "^5.20.0",
+		"typescript": "^3.6.4",
 		"vscode-test": "^1.2.2"
 	}
 }

@@ -5,7 +5,6 @@
       "../../node_modules/@types/node",
       "../../node_modules/xterm-headless"
     ],
-    "target": "es5",
     "lib": [
       "es5",
       "ES2015",
@@ -14,7 +13,11 @@
       "DOM"
     ],
     "rootDir": ".",
-    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "./*"
+      ]
+    },
     "outDir": "../../out/test",
 
     "composite": true,
@@ -26,6 +29,7 @@
     "incremental": true,
     "noImplicitOverride": true,
     "skipLibCheck": true,
+    "esModuleInterop": true,
     "strict": true
   },
   "include": [

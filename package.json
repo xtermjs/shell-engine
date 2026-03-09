@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch-tsc": "tsc -b -w ./tsconfig.json",
+    "build": "tsgo -b ./tsconfig.json",
+    "watch-tsgo": "tsgo -b -w ./tsconfig.json",
     "watch-webpack": "webpack -c ./examples/xterm.js/webpack.config.js -w",
-    "test": "vitest run --globals out/test"
+    "test": "vitest run --globals --dir src/test"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   "devDependencies": {
     "@types/minimist": "^1.2.2",
     "@types/node": "^20.19.37",
+    "@typescript/native-preview": "^7.0.0-dev.20260309.1",
     "babel-loader": "^8.2.2",
     "mocha": "^10.0.0",
     "source-map-loader": "^3.0.0",

@@ -1,5 +1,5 @@
 import { ICommand, IFileSystemProvider, Shell } from "../types";
-import * as minimist from 'minimist';
+import minimist from 'minimist';
 import { join } from "../path";
 import { FileType } from "../constants";
 
